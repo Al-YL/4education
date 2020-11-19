@@ -1,6 +1,6 @@
-# Something for astronomical education in middle school
+# Something for astronomical education in middle schools
 
-Illustrated guide to the Constellation 
+Illustrated guide to the Constellations
 
 Computation Model for displaying sky objects
 
