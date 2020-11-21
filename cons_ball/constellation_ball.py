@@ -44,7 +44,7 @@ for i in range(pieces):
 	ax.set_xlim(-2e7-0.166666e7, -2e7+0.166666e7)
 	ax.set_ylim(0, 2e7)
 	for s in range(len(conste_names)):
-		lines = Table.read('Lines_Art/' + conste_names[s] + '.csv', format='csv')
+		lines = Table.read('../Lines_Art/' + conste_names[s] + '.csv', format='csv')
 		Conste = Bright[Bright['con'] == conste_names[s]]
 		Conste['ra_rv'] = (Conste['ra_rv'] + rot) % 24
 		if len(lines) > 0:
@@ -66,7 +66,7 @@ for i in range(pieces):
 			continue
 		else:
 			pass
-		bound = Table.read('bound/' + conste_names[s] + '_Bound', format='ascii')
+		bound = Table.read('../bound/' + conste_names[s] + '_Bound', format='ascii')
 		bound.add_row([bound['col1'][0], bound['col2'][-1], conste_names[s]])
 		bound.add_row([bound['col1'][0], bound['col2'][0], conste_names[s]])
 		bound['ra'] = np.zeros(len(bound)) - 999.
