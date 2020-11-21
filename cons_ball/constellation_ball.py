@@ -6,7 +6,7 @@ from astropy.table import Table,vstack
 import matplotlib.font_manager as mfm
 
 #Read Star Catalog
-Bright = Table.read('naked_eye.fits')
+Bright = Table.read('../naked_eye.fits')
 Bright.sort('mag')
 
 #Remove the Sun
