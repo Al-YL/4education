@@ -1,11 +1,10 @@
 # Something for astronomical education in middle schools
 
-##Constellation Ball
-constellation_ball.py 
+Constellation Ball
 
-##Illustrated guide to the Constellations
+Illustrated guide to the Constellations
 
-##Computation Model for displaying sky objects
+Computation Model for displaying sky objects
 
 ...
 
