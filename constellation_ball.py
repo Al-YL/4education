@@ -20,7 +20,7 @@ fig = plt.figure(figsize=(18, 9))
 
 pieces = 12
 piece_ang = 360/pieces
-#12 pieces is the most appropriate
+#12-piece is the most appropriate
 
 for i in range(pieces):
 	rect_scatter = [1./pieces*i, 0.0, 1./pieces, 1]
