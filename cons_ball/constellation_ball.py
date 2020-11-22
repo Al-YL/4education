@@ -37,7 +37,7 @@ for i in range(pieces):
 	Const['ra_rv'] = (Const['ra_rv'] + rot) % 24
 	Bright['ra_rv_t'] = (Bright['ra_rv'] + rot) % 24
 	conste_names = [j for j in set(Const['con'])]
-  #Plot ecliptic
+  	#Plot ecliptic
 	m.drawgreatcircle(-(270 + 15*rot) % 360, -23.44, -(90.001 + 15*rot) % 360, +23.44, linewidth = 2, color = '#907910')
 	m.drawgreatcircle(-(270.001 + 15*rot) % 360, -23.44, -(90 + 15*rot) % 360, +23.44, linewidth = 2, color = '#907910')
   m.drawparallels(np.arange(-90,90,30), color = '#c6c2b6')
@@ -91,7 +91,7 @@ for i in range(pieces):
 			m.plot(x, y, marker=None, color='#AAAAAA', lw=1, linestyle=':', alpha=1.)
 	for k in range(len(Const)):
 		x, y = m(Const['ra_rv'][k]*15., Const['dec'][k])
-    #Modify the marksize of the stars with different mag
+    		#Modify the marksize of the stars with different mag
 		if Const['mag'][k] > 2.:
 			m.plot(x, y, marker = 'o', color = 'black', ms = 20*(10**(-0.4*0.5*max(Const['mag'][k],0.5))), mec = 'white', mew = 3*(10**(-0.4*0.5*max(Const['mag'][k], 0.5))))
 		else:
