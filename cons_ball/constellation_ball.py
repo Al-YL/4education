@@ -27,6 +27,7 @@ for i in range(pieces):
 	ax = fig.add_axes(rect_scatter)
 	max_ra, min_ra = piece_ang*(i+1), piece_ang*i
 	Const = Bright[(Bright['ra_rv']*15 < max_ra) & (Bright['ra_rv']*15 >= min_ra)]
+	#Boundary Check
 	if (min_ra == 0) or (max_ra == 360):
 		rot = 12
 		max_ra, min_ra = (piece_ang*(i+1) + 15*rot) % 360, (piece_ang*i + 15*rot) % 360
