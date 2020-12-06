@@ -96,9 +96,5 @@ for i in range(pieces):
 			m.plot(x, y, marker = 'o', color = 'black', ms = 20*(10**(-0.4*0.5*max(Const['mag'][k],0.5))), mec = 'white', mew = 3*(10**(-0.4*0.5*max(Const['mag'][k], 0.5))))
 		else:
 			m.plot(x, y, marker = '*', color = 'black', ms = 1.25*20*(10**(-0.4*0.5*max(Const['mag'][k],0.5))), mec = 'white', mew = 0.8*(10**(-0.4*0.5*max(Const['mag'][k],0.5))))
-	y_l = np.pi * np.linspace(-0.5, 0, 100)
-	y_u = np.pi * np.linspace(0.5, 0, 100)
-	x_r = 2e7 * (1./12 * np.cos(y_u) + 1)
-	x_l = 2e7 * (-1./12 * np.cos(y_u) + 1)
 
 plt.savefig('Skymap.pdf')
