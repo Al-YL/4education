@@ -15,7 +15,7 @@ Bright = Bright[1:]
 #Reverse the Right Ascension (unit:hour) for outside-in perspective
 Bright['ra_rv'] = 24 - Bright['ra']
 
-#Plot the Sky Map, the ratio of length to width = 2
+#Plot the Sky Map, the ratio of width to length = 2
 fig = plt.figure(figsize=(18, 9))
 
 pieces = 12
